@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MISTÉRIOS SINISTROS - O Valete de Paus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Georgia&display=swap" rel="stylesheet">
+</head>
+<!-- O ID no body é crucial para o script saber qual enigma resolver -->
+    <div id="persistent-audio-player">
+        <audio id="background-music-player" loop>
+            <!-- A música padrão do seu site (arquivo local) -->
+            <source src="bg.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="site-title">MISTÉRIOS SINISTROS</h1>
+            <p class="tagline">A página MAIS ASSUSTADORA da internet.</p>
+        </header>
+
+        <div class="ticker-wrap">
+            <marquee>...um novo corpo, uma nova mensagem... a arte de Laplace é a própria morte...</marquee>
+        </div>
+
+        <div class="main-content">
+            <main>
+                <article class="post">
+                    <h2 class="post-title">O Assassinato de Gael Devereaux</h2>
+                    <h3 class="report-title">UMA OBRA-PRIMA DO HORROR</h3>
+                    <p class="meta">Publicado: 30 de Junho, 2006 // Postado por: Sofia Mendes</p>
+                    
+                    <p>O corpo do famoso artista Gael Devereaux foi encontrado na madrugada de hoje em frente a um cavalete, com os pulsos cortados e pincéis ainda nas mãos. Sua última obra, intitulada "A Transmutação", foi pintada com seu próprio sangue sobre uma tela branca.</p>
+                    <p>Quando os policiais arrombaram a porta do estúdio, depararam-se com uma visão digna de Caravaggio:</p>
+                    <blockquote>"Gael estava ajoelhado diante da tela. Seus braços estendidos sustentavam pincéis embebidos em seu próprio sangue, congelados no ato de pintar. Os olhos, arrancados e depositados em tigelas de pigmento, encaravam a obra finalizada com pupilas diluídas em azul e vermelho. Era uma cena horrível."<br>— Inspetor Geraldo Moraes, primeiro no local.</blockquote>
+                    <p>Tanto teóricos da conspiração quanto especialistas especulam que o caso tenha relação com o infame Assassino de Laplace, sugerem que a cena é uma acusação póstuma a Gael, cuja carreira foi construída sobre plágios </p>
+					<blockquote>"Deveraux não cometeu suicídio. Devereaux era um gênio do marketing, não da arte. Foi forçado a pintar sua própria acusação."<br>- afirma Prof. Leandro Castro (historiador da arte).</blockquote>
+
+                    <h3 class="report-title">A Maleta</h3>
+                    <p>Ainda na cena, existia uma maleta com 48 peças de um quebra-cabeça. Disponibilizamos as peças para vocês investigarem.</p>
+                    
+   <!-- ENIGMA 1: A Maleta -->
+                    <div class="evidence-section">
+                        <h3>Enigma 1: Abrir a Maleta</h3>
+                        <div id="password-section-1">
+                            <!-- IDs ÚNICOS PARA A MALETA -->
+                            <input type="text" id="maleta-password-input" placeholder="Senha da Maleta:">
+                            <button type="button" id="maleta-verify-button">Abrir</button>
+                            <p id="maleta-error-message" class="hidden error-message">ACESSO NEGADO.</p>
+                        </div>
+                    </div>
+
+                    <!-- ENIGMA 2: Revelar a Obra -->
+                    <div class="evidence-section">
+                        <h3>Enigma 2: Porta para Onde?</h3>
+                        <div id="password-section-2">
+                             <!-- IDs ÚNICOS PARA O CARROSSEL -->
+                            <input type="text" id="carousel-password-input" placeholder="Palavra-chave:">
+                            <button type="button" id="carousel-verify-button">Revelar</button>
+                            <p id="carousel-error-message" class="hidden error-message">PALAVRA-CHAVE INCORRETA.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- O Carrossel (A Recompensa Final), inicialmente escondido -->
+                    <div id="carousel-wrapper" class="hidden">
+                        <h3 class="report-title">"A Transmutação"</h3>
+        <!-- INÍCIO DO CARROSSEL -->
+        <div class="carousel-container">
+            <button class="carousel-button prev" id="prevButton">‹</button>
+            <div class="carousel-track-container">
+         <ul class="carousel-track">
+                                    <li class="carousel-slide"><img class="carousel-image" src="imgur.png" alt="A Transmutação"></li>
+                                </ul>
+            </div>
+            <button class="carousel-button next" id="nextButton">›</button>
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+            </div>
+        </div>
+        <!-- FIM DO CARROSSEL -->
+                    </div>
+					
+                </article>
+				
+				                <!-- Seção de Comentários -->
+                <section id="comments">
+                    <h3>Comentários (3)</h3>
+                    <div class="comment">
+                        <div class="comment-meta">
+                            <strong>dudu01222</strong> disse:
+                            <span class="timestamp">1 de Julho, 2024 às 11:17</span>
+                        </div>
+                        <p>sempre soube que esse cara era uma farsa</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-meta">
+                            <strong>LindoSB</strong> disse:
+                            <span class="timestamp">2 de Setembro, 2024 às 16:30</span>
+                        </div>
+                        <p>Eu acho que o quadro é o pedaço menos significante dessa parada toda</p>
+                    </div>
+
+                    <form class="comment-form">
+                        <h4>Deixe seu comentário:</h4>
+                        <label for="name">Seu Nome:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="comment-text">Sua Mensagem:</label>
+                        <textarea id="comment-text" name="comment-text" rows="4"></textarea>
+                        <button type="submit">Publicar Comentário</button>
+                    </form>
+                </section>
+				
+            </main>
+
+
+            <!-- A Barra Lateral continua a mesma -->
+            <aside>
+                <div class="widget">
+                    <h3 class="widget-title">- Sobre o Blog -</h3>
+                    <p>Bem vindo ao Mistérios Sinistros. Este espaço é dedicado a investigar o inexplicável. Documentamos e analisamos mistérios que a polícia não consegue resolver e que a mídia tem medo de tocar. Se você tem sede pela verdade, está no lugar certo, mas só entre se tiver coragem...</p>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">- Categorias -</h3>
+                    <ul>
+                        <li><a href="casos.html">Casos Arquivados</a></li>
+                        <li><a href="teorias.html">Teorias da Conspiração</a></li>
+                        <li><a href="lendas.html">Lendas Urbanas</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">- Contador de Visitas -</h3>
+                    <div class="visitor-counter">
+                        <p>VOCÊ É O VISITANTE NÚMERO:</p>
+                        <div class="counter-box"><span id="visitor-number">000000</span></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <p>© 2004 - MISTÉRIOS SINISTROS. Todos os direitos reservados. Site otimizado para Netscape Navigator 4.0.</p>
+        </footer>
+    </div>
+    
+    <!-- Link de download invisível -->
+    <a href="spilsbury.rar" id="real-download-link" style="display: none;"></a>
+    
+    <script src="script.js"></script>
+</body>
+</html>

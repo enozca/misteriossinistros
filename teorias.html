@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MISTÉRIOS SINISTROS - Fórum de Teorias</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Georgia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="persistent-audio-player">
+        <audio id="background-music-player" loop>
+            <!-- A música padrão do seu site (arquivo local) -->
+            <source src="bg.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="site-title">MISTÉRIOS SINISTROS</h1>
+            <p class="tagline">Onde a realidade e o pesadelo se encontram.</p>
+        </header>
+
+        <div class="ticker-wrap">
+            <marquee>...a verdade que não querem que você saiba...</marquee>
+        </div>
+
+        <div class="main-content">
+            <!-- Conteúdo Principal da Página de Discussão -->
+            <main>
+                <h2 class="post-title">Discussão de Teorias</h2>
+                <div class="forum-thread">
+
+                    <!-- TÓPICO DE TEORIA 1 -->
+                    <div class="forum-post original-post">
+                        <div class="user-info"><img src="avatar.png" alt="Avatar"><br><strong>ByteBender</strong><p class="user-title">Mestre dos Enigmas</p></div>
+                        <div class="post-content">
+                            <p class="post-meta">Postado em: 17 Out 2023, 09:15</p>
+                            <h3>Teoria: A cifra numérica original</h3>
+                            <p>Eu sei que a senha do primeiro enigma era sobre o poema, mas e aquela sequência de números?</p>
+                        </div>
+                    </div>
+                    <!-- Respostas ao Tópico 1 -->
+                    <div class="replies-container">
+                        <div class="forum-post reply-post">
+                            <div class="user-info"><img src="avatar.png" alt="Avatar"><br><strong>Cético1987</strong><p class="user-title">Novato</p></div>
+                            <div class="post-content"><p class="post-meta">Re: 17 Out 2023, 10:30</p><p>Na real aquilo é tipo crucial pra você traduzir a cifra</p></div>
+                        </div>
+                        <div class="forum-post reply-post">
+                            <div class="user-info"><img src="avatar.png" alt="Avatar"><br><strong>𝕲𝖆𝖇</strong><p class="user-title">Voz no Vazio</p></div>
+                            <div class="post-content"><p class="post-meta">Re: 17 Out 2023, 11:05</p><p>kkkkkkkkkkkk</p></div>
+                        </div>
+                    </div>
+
+                    <!-- TÓPICO DE TEORIA 2 -->
+                    <div class="forum-post original-post">
+                        <div class="user-info"><img src="avatar.png" alt="Avatar"><br><strong>garfild</strong><p class="user-title">Investigador</p></div>
+                        <div class="post-content">
+                            <p class="post-meta">Postado em: 18 Out 2023, 12:40</p>
+                            <h3>Observação</h3>
+                            <p>Vcs notaram que os assassinatos recentes seguem um padrao? parando pra pensar, os quatro (juiz, pintor, noiva e o banqueiro) podem ser relacionados aos quatro cavaleiros também. Sera q é de propósito?</p>
+                        </div>
+                    </div>
+                     <!-- Respostas ao Tópico 2 -->
+                    <div class="replies-container">
+                        <div class="forum-post reply-post">
+                            <!-- O avatar de Laplace tem uma classe especial -->
+                            <div class="user-info"><img src="avatar.png" class="laplace-avatar" alt="Avatar"><br><strong>.</strong><p class="user-title">Novato</p></div>
+                            <div class="post-content"><p class="post-meta">Re: 18 Out 2023, 15:00</p><p>Acho que nn</p></div>
+                        </div>
+                    </div>
+                </div>
+				
+				                    <!-- TÓPICO DE TEORIA 3 -->
+                    <div class="forum-post original-post">
+                        <div class="user-info"><img src="avatar.png" alt="Avatar"><br><strong>rodrigor</strong><p class="user-title">Detetive</p></div>
+                        <div class="post-content">
+                            <p class="post-meta">Postado em: 14 Mar 2024, 23:44</p>
+                            <h3>ajudaaaaaaaaaaa</h3>
+                            <p>Alguém sabe a senha do ngc do juiz???? pls</p>
+                        </div>
+                    </div>
+
+                <!-- Formulário para "Postar nova teoria" -->
+                <form class="comment-form" id="new-theory-form">
+                    <h4>Postar uma Nova Teoria</h4>
+                    <input type="text" id="theory-title" placeholder="Título da sua teoria...">
+                    <textarea id="theory-text" rows="6" placeholder="Escreva sua teoria aqui..."></textarea>
+                    <button type="submit">Publicar Teoria</button>
+                </form>
+            </main>
+
+            <!-- A Barra Lateral continua a mesma -->
+            <aside>
+                <div class="widget">
+                    <h3 class="widget-title">- Sobre o Blog -</h3>
+                    <p>Bem vindo ao Mistérios Sinistros. Este espaço é dedicado a investigar o inexplicável. Documentamos e analisamos mistérios que a polícia não consegue resolver e que a mídia tem medo de tocar. Se você tem sede pela verdade, está no lugar certo, mas só entre se tiver coragem...</p>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">- Categorias -</h3>
+                    <ul><li><a href="casos.html">Casos Arquivados</a></li>
+                        <li><a href="index.html">Página Inicial</a></li>
+					<li><a href="lendas.html">Lendas Urbanas</a></li></ul>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">- Contador de Visitas -</h3>
+                    <div class="visitor-counter">
+                        <p>VOCÊ É O VISITANTE NÚMERO:</p>
+                        <div class="counter-box"><span id="visitor-number">000000</span></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <p>© 2004 - MISTÉRIOS SINISTROS. Todos os direitos reservados. Site otimizado para Netscape Navigator 4.0.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

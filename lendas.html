@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MISTÉRIOS SINISTROS - Lendas Urbanas</title> <!-- Título da página atualizado -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Georgia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="persistent-audio-player">
+        <audio id="background-music-player" loop>
+            <!-- A música padrão do seu site (arquivo local) -->
+            <source src="bg.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="site-title">MISTÉRIOS SINISTROS</h1>
+            <p class="tagline">Onde a realidade e o pesadelo se encontram.</p>
+        </header>
+
+        <div class="ticker-wrap">
+            <marquee>...toda lenda tem um fundo de verdade...</marquee>
+        </div>
+
+        <div class="main-content">
+            <!-- Conteúdo Principal da Página de Casos Arquivados -->
+            <main>
+                <article class="post">
+                    <h2 class="post-title">Lendas Urbanas</h2>
+                    <p class="meta">Seção em desenvolvimento...</p>
+                    <p>Aqui repousam as histórias que foram esquecidas pelo tempo e abandonadas pela lei.</p>
+                    <p>Cada um desses casos representa uma peça de um quebra-cabeça muito maior. Eles podem parecer desconexos, mas para um olhar atento, os padrões começam a surgir.</p>
+                    <p>Volte em breve. As gavetas deste arquivo serão abertas uma a uma.</p>
+                </article>
+            </main>
+
+            <!-- A Barra Lateral é a mesma do index.html -->
+            <aside>
+                <div class="widget">
+                    <h3 class="widget-title">- Sobre o Blog -</h3>
+                    <p>Este espaço é dedicado a investigar o inexplicável...</p>
+                </div>
+                <!-- Menu de Categorias ATUALIZADO -->
+                <div class="widget">
+                    <h3 class="widget-title">- Categorias -</h3>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="teorias.html">Teorias da Conspiração</a></li>
+                        <li><a href="casos.html">Casos Arquivados</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">- Contador de Visitas -</h3>
+                    <div class="visitor-counter">
+                        <p>VOCÊ É O VISITANTE NÚMERO:</p>
+                        <div class="counter-box"><span id="visitor-number">000000</span></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer><p>© 2004 - MISTÉRIOS SINISTROS. Todos os direitos reservados... ou amaldiçoados?</p></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

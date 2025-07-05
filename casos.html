@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MISTÉRIOS SINISTROS - Casos Arquivados</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Georgia&display=swap" rel="stylesheet">
+</head>
+<body id="page-cases">
+    <div id="persistent-audio-player">
+        <audio id="background-music-player" loop>
+            <!-- A música padrão do seu site (arquivo local) -->
+            <source src="bg.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="site-title">MISTÉRIOS SINISTROS</h1>
+            <p class="tagline">A página MAIS ASSUSTADORA da internet.</p>
+        </header>
+		
+              <div class="ticker-wrap">
+            <marquee behavior="scroll" direction="left">...últimas notícias... polícia encontra corpo de juiz em tribunal abandonado... um novo assassino à solta?</marquee>
+        </div>
+		
+        <div class="main-content">
+            <main>
+                <article class="post">
+                    <h2 class="post-title">Casos Arquivados</h2>
+                    <p>Muitos vieram antes. Muitos virão depois. Aqui você encontrará casos reais de crimes que factualmente aconteceram, mas geralmente foram esquecidos. Alguns arquivos requerem uma chave para serem abertos.</p>
+                    
+                    <div class="case-files-grid">
+                        <!-- Caso 1: Juiz (Sempre aberto) -->
+                        <a href="index.html" class="case-file">
+                            <div class="file-icon">📁</div>
+                            <h4>O JUIZ AMALDIÇOADO</h4>
+                            <p>A primeira peça do quebra-cabeça.</p>
+                            <span class="file-status status-open">ARQUIVO ABERTO</span>
+                        </a>
+
+                        <!-- Os casos selados agora são DIVs com data-attributes -->
+                        <a href="jack_of_clubs.html" class="case-file">
+                            <div class="file-icon">📁</div>
+                            <h4>O Assassinato de Gael</h4>
+                            <p>Uma obra-prima do horror.</p>
+                            <span class="file-status status-open">ARQUIVO ABERTO</span>
+                        </a>
+
+                        <div class="case-file sealed" data-case-id="noiva" data-target-page="queen_of_hearts.html">
+                            <div class="file-icon">📁</div>
+                            <h4>A ÚLTIMA ÁRIA</h4>
+                            <p>Um voto de amor eterno quebrado.</p>
+                            <span class="file-status status-sealed">REQUER SENHA</span>
+                        </div>
+
+                        <div class="case-file sealed" data-case-id="banqueiro" data-target-page="king_of_diamonds.html">
+                            <div class="file-icon">📁</div>
+                            <h4>O Caso do Banqueiro Avarento</h4>
+                            <p>Sua fortuna não pôde salvá-lo.</p>
+                            <span class="file-status status-sealed">REQUER SENHA</span>
+                        </div>
+                    </div>
+                </article>
+            </main>
+                        <!-- Barra Lateral com Widgets -->
+            <aside>
+                <div class="widget">
+                    <h3 class="widget-title">- Sobre o Blog -</h3>
+                    <p>Bem vindo ao Mistérios Sinistros. Este espaço é dedicado a investigar o inexplicável. Documentamos e analisamos mistérios que a polícia não consegue resolver e que a mídia tem medo de tocar. Se você tem sede pela verdade, está no lugar certo, mas só entre se tiver coragem...</p>
+                </div>
+<div class="widget">
+                    <h3 class="widget-title">- Categorias -</h3>
+                    <ul>
+                        <li><a href="casos.html">Casos Arquivados</a></li>
+                        <li><a href="teorias.html">Teorias da Conspiração</a></li>
+                        <li><a href="lendas.html">Lendas Urbanas</a></li>
+                    </ul>
+                </div>
+<div class="widget">
+                    <h3 class="widget-title">- Contador de Visitas -</h3>
+                    <div class="visitor-counter">
+                        <p>VOCÊ É O VISITANTE NÚMERO:</p>
+                        <div class="counter-box">
+                            <!-- O JavaScript vai inserir o número aqui -->
+                            <span id="visitor-number">000000</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <p>© 2004 - MISTÉRIOS SINISTROS. Todos os direitos reservados. Site otimizado para Netscape Navigator 4.0.</p>
+        </footer>
+    </div>
+
+    <!-- Modal de Senha para os Casos (escondido) -->
+    <div id="password-modal-cases" class="hidden">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="cases-modal-close-btn">X</button>
+            <h3 id="modal-case-title">Acesso Restrito</h3>
+            <p>Este arquivo está selado. Insira a senha correta para abri-lo.</p>
+            <input type="text" id="cases-password-input" placeholder="Senha do Caso...">
+            <button type="button" id="cases-verify-button">Desbloquear</button>
+            <p id="cases-error-message" class="hidden error-message">SENHA INCORRETA.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

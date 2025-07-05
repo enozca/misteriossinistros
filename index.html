@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISTÉRIOS SINISTROS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Georgia&display=swap" rel="stylesheet">
+</head>
+	
+<body id="page-ace-of-spades">
+
+    <div id="audio-prompt-overlay">
+        <div class="audio-prompt-box">
+            <h2>Bem-vindo, alma perdida...</h2>
+            <p>Este site contém sons amaldiçoados.</p>
+            <p>CLIQUE EM QUALQUER LUGAR PARA CONTINUAR, SE TIVER CORAGEM.</p>
+        </div>
+    </div>
+
+    <div id="persistent-audio-player">
+        <audio id="background-music-player" loop>
+            <!-- A música padrão do seu site (arquivo local) -->
+            <source src="bg.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="bg.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <header>
+            <h1 class="site-title">MISTÉRIOS SINISTROS</h1>
+            <p class="tagline">A página MAIS ASSUSTADORA da internet.</p>
+        </header>
+		
+		        <!-- O Ticker de Notícias (marquee) - pico da estética anos 2000 -->
+        <div class="ticker-wrap">
+            <marquee behavior="scroll" direction="left">...últimas notícias... polícia encontra corpo de juiz em tribunal abandonado... um novo assassino à solta?</marquee>
+        </div>
+
+        <div class="main-content">
+            <!-- Coluna Principal com o Enigma -->
+            <main>
+                <article class="post">
+                    <h2 class="post-title">O JUIZ AMALDIÇOADO</h2>
+                    <p class="meta">Publicado: 13 de Outubro, 2003 // Postado por: DarkMaster666</p>
+
+                    <p>O corpo do juiz Alistair Voss, 68, foi encontrado na madrugada desta quarta-feira no antigo Tribunal Criminal de Blackwell Street... A cena, descrita por investigadores como "calculadamente teatral", sugere que o assassino não quer apenas matar, mas busca por algo além disso.</p>
+
+                    <p>Voss estava sentado em sua antiga cadeira judicial, vestindo o robe negro já manchado de sépias de tempo — e agora, de sangue. Uma espada medieval foi cravada em seu peito, transfixando um pergaminho com um poema, que parece ser a primeira peça de um quebra-cabeça macabro:</p>
+
+                    <div class="image-container">
+                        <img id="crime-scene-img" src="cena-crime.png" alt="A cena do crime do Juiz Voss.">
+                        <p class="caption">A única imagem da cena. A verdade se esconde nos detalhes.</p>
+                    </div>
+
+                    <blockquote> "A Justiça, augusta e altiva, <br>
+Tem a espada e tem a balança, <br>
+Mas da espada a lâmina é falha, <br>
+E da balança a régua é falsa. <br>
+<br>
+E os olhos da Justiça turvos <br>
+São olhos que não enxergam, <br>
+São olhos que só olham <br>
+Última e violentamente <br>
+Para as grandezas infinitas do Ouro." </blockquote>
+
+                    <p>Um arquivo com as evidências digitais foi encontrado, mas está criptografado. A senha parece estar conectada às pistas deixadas para trás.</p>
+
+                   <div class="evidence-section">
+                        <h3>Decriptar Dossiê do Juiz</h3>
+                        <div id="password-section">
+                            <!-- IDs ÚNICOS PARA O JUIZ -->
+                            <input type="text" id="juiz-password-input" placeholder="SENHA:">
+                            <button type="button" id="juiz-verify-button">DECRIPTAR</button>
+                            <p id="juiz-error-message" class="hidden error-message">SENHA INCORRETA.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Seção de Comentários -->
+                <section id="comments">
+                    <h3>Comentários (4)</h3>
+                    <div class="comment">
+                        <div class="comment-meta">
+                            <strong>Anônimo</strong> disse:
+                            <span class="timestamp">14 de Outubro, 2023 às 22:14</span>
+                        </div>
+                        <p>EU TIREI PRINT DA FOTO E APARECEU UMA MÃO NO OM BRO DO JUÍZ!! ALGUÉM ME AJUDE!!!</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-meta">
+                            <strong>Cético1987</strong> disse:
+                            <span class="timestamp">15 de Outubro, 2023 às 09:30</span>
+                        </div>
+                        <p>Ah qual é, gente. É só mais um maluco querendo atenção. Provavelmente alguma campanha de marketing pra um filme de terror. O poema deve ser de algum livro famoso.</p>
+                    </div>
+					                   <div class="comment">
+                        <div class="comment-meta">
+                            <strong>MatrixRevelada</strong> disse:
+                            <span class="timestamp">15 de Outubro, 2015 às 10:15</span>
+                        </div>
+                        <p>Não é marketing, seus tolos. É um aviso. Os Iluminatti estão fazendo a queima de arquivos. O 'Ouro' não é literal, se refere ao topo da pirâmide. ACORDEM!!!</p>
+                    </div>
+                  <div class="comment admin-post">
+                        <div class="comment-meta">
+                            <strong>Admin</strong> disse:
+                            <span class="timestamp">15 de Outubro, 2003 às 11:55</span>
+                        </div>
+                        <p class="banned-user-msg">🚨 USUÁRIO "SATANISTA123" BANIDO POR POSTAR CONTEÚDO INADEQUADO 🚨</p>
+                    </div>
+
+                    <form class="comment-form">
+                        <h4>Deixe seu comentário:</h4>
+                        <label for="name">Seu Nome:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="comment-text">Sua Mensagem:</label>
+                        <textarea id="comment-text" name="comment-text" rows="4"></textarea>
+                        <button type="submit">Publicar Comentário</button>
+                    </form>
+                </section>
+            </main>
+
+            <!-- Barra Lateral com Widgets -->
+            <aside>
+                <div class="widget">
+                    <h3 class="widget-title">- Sobre o Blog -</h3>
+                    <p>Bem vindo ao Mistérios Sinistros. Este espaço é dedicado a investigar o inexplicável. Documentamos e analisamos mistérios que a polícia não consegue resolver e que a mídia tem medo de tocar. Se você tem sede pela verdade, está no lugar certo, mas só entre se tiver coragem...</p>
+                </div>
+<div class="widget">
+                    <h3 class="widget-title">- Categorias -</h3>
+                    <ul>
+                        <li><a href="casos.html">Casos Arquivados</a></li>
+                        <li><a href="teorias.html">Teorias da Conspiração</a></li>
+                        <li><a href="lendas.html">Lendas Urbanas</a></li>
+                    </ul>
+                </div>
+<div class="widget">
+                    <h3 class="widget-title">- Contador de Visitas -</h3>
+                    <div class="visitor-counter">
+                        <p>VOCÊ É O VISITANTE NÚMERO:</p>
+                        <div class="counter-box">
+                            <!-- O JavaScript vai inserir o número aqui -->
+                            <span id="visitor-number">000000</span>
+                        </div>
+						                        <p>ONLINE AGORA:</p>
+                        <div class="counter-box small-box">
+                             <span id="online-users">65</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <p>© 2004 - MISTÉRIOS SINISTROS. Todos os direitos reservados. Site otimizado para Netscape Navigator 4.0.</p>
+        </footer>
+    </div>
+	
+    <div id="modal-overlay" class="hidden">
+        <div id="modal-window">
+            <div id="modal-header">
+                <p>C:\> DECRIPTANDO ARQUIVO: EVIDÊNCIAS_01.zip</p>
+                <button id="modal-close-btn">X</button>
+            </div>
+            <div id="modal-content">
+                <!-- O conteúdo da recompensa será inserido aqui pelo JavaScript -->
+            </div>
+        </div>
+    </div>
+	
+	    <!-- LINK DE DOWNLOAD REAL E INVISÍVEL -->
+    <a href="judex_ocissus.zip" id="real-download-link" style="display: none;"></a>
+
+    <script src="script.js"></script>
+</body>
+</html>

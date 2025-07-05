@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MISTÉRIOS SINISTROS - A Rainha de Copas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Georgia&display=swap" rel="stylesheet">
+</head>
+<!-- ID crucial para o script saber qual enigma resolver -->
+<body id="page-queen-of-hearts">
+	
+    <div id="persistent-audio-player">
+        <audio id="background-music-player" loop>
+            <!-- A música padrão do seu site (arquivo local) -->
+            <source src="aria.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
+    <!-- O Overlay para o Glitch Vermelho (A PEÇA QUE FALTAVA) -->
+    <div id="glitch-overlay" class="hidden"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="site-title">MISTÉRIOS SINISTROS</h1>
+            <p class="tagline">A página MAIS ASSUSTADORA da internet.</p>
+        </header>
+        <div class="ticker-wrap"><marquee>...a cortina cai, a ária termina, mas a música do assassino continua a tocar...</marquee></div>
+
+    <div id="normal-content">
+        <div class="main-content">
+            <main>
+                <article class="post">
+                    <h2 class="post-title">RAINHA DE COPAS - Rosália Varga</h2>
+                    <h3 class="report-title">A ÚLTIMA ÁRIA: CANTORA É ASSASSINADA EM ALTAR</h3>
+                    <p class="meta">Publicado: 15 de Agosto, 2024 // Postado por XANDÃO DETETIVE</p>
+                    
+                    <p>Na madrugada desta sexta-feira, a soprano Rosália Varga, 34, conhecida por sua interpretação icônica da "Rainha de Copas" na ópera homônima, foi encontrada morta no altar da abandonada Igreja de Santa Cecília, em Viena. A cena, traz a assinatura inconfundível do serial killer Laplace — e desta vez, o recado é musical.</p>
+                    <p>Ao entrar na igreja, os investigadores depararam-se com a vítima vestida de noiva, seu vestido branco tingido de vermelho-carmim, e o detalhe mais bizarro: seu coração havia sido cirurgicamente substítuido por um metrônomo.</p>
+					<div class="pulsing-heart">♥</div>
+                </article>
+            </main>
+   <aside>
+                <div class="widget">
+                    <h3 class="widget-title">- Sobre o Blog -</h3>
+                    <p>Bem vindo ao Mistérios Sinistros. Este espaço é dedicado a investigar o inexplicável. Documentamos e analisamos mistérios que a polícia não consegue resolver e que a mídia tem medo de tocar. Se você tem sede pela verdade, está no lugar certo, mas só entre se tiver coragem...</p>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">- Categorias -</h3>
+                    <ul>
+                        <li><a href="casos.html">Casos Arquivados</a></li>
+                        <li><a href="teorias.html">Teorias da Conspiração</a></li>
+                        <li><a href="lendas.html">Lendas Urbanas</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">- Contador de Visitas -</h3>
+                    <div class="visitor-counter">
+                        <p>VOCÊ É O VISITANTE NÚMERO:</p>
+                        <div class="counter-box"><span id="visitor-number">000000</span></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <p>© 2004 - MISTÉRIOS SINISTROS. Todos os direitos reservados. Site otimizado para Netscape Navigator 4.0.</p>
+        </footer>
+    </div>
+
+    <div id="nightmare-content" class="hidden">
+        <!-- O áudio específico deste modo -->
+        <audio id="nightmare-audio" loop><source src="metronomo.mp3" type="audio/mpeg"></audio>
+        
+        <!-- Onde o texto será "digitado" -->
+        <pre id="cipher-text"></pre>
+        
+        <!-- O vídeo, que começa escondido -->
+        <video id="nightmare-video" class="hidden" loop><source src="karaoke.mp4" type="video/mp4"></video>
+    </div>
+	
+    <script src="script.js"></script>
+</body>
+</html>

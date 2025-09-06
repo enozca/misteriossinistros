@@ -6,14 +6,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <!-- Um ID especial no body para que possamos aplicar estilos únicos a esta página -->
+<!-- extorsao.html -->
 <body id="page-final">
-
-    <video id="final-video" autoplay muted loop playsinline>
+    <video id="final-video" autoplay loop playsinline muted>
         <source src="fin.mp4" type="video/mp4">
-        O seu navegador não suporta este formato de vídeo.
     </video>
 
-    <!-- Nenhum outro conteúdo. Nenhum script. Apenas o vídeo. -->
+    <!-- Uma mensagem opcional para guiar o usuário -->
+    <div id="overlay-message">Clique em qualquer lugar para ativar o som</div>
 
+    <script>
+        // Podemos colocar o script direto no HTML para simplicidade
+        const video = document.getElementById('final-video');
+        const message = document.getElementById('overlay-message');
+
+        // Função para ativar o som e tocar o vídeo
+        function playWithSound() {
+            video.muted = false;
+            // A chamada .play() retorna uma Promise. É uma boa prática usá-la.
+            video.play().catch(error => {
+                // O autoplay pode falhar por outras razões
+                console.error("Erro ao tentar tocar o vídeo:", error);
+            });
+            
+            if (message) {
+                message.style.display = 'none'; // Esconde a mensagem após o clique
+            }
+
+            // Remove o "ouvinte" para que não seja acionado novamente
+            document.body.removeEventListener('click', playWithSound);
+        }
+
+        // Adiciona um "ouvinte" para o primeiro clique no corpo da página
+        document.body.addEventListener('click', playWithSound);
+    </script>
 </body>
 </html>
